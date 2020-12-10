@@ -5,7 +5,7 @@ from models import Base
 from seed import seed
 
 
-DATABASE_URI = ''
+DATABASE_URI = "postgres+psycopg2://localhost:5432/todo
 engine = create_engine(DATABASE_URI)
 Session = sessionmaker(bind=engine)
 
